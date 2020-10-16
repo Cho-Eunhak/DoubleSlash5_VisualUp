@@ -137,7 +137,7 @@ function GoalSet({match}){
             "graphColor": graphColor
         };
         if(goalId===""){
-            axios.post(`http://visualup.koreacentral.cloudapp.azure.com/goal`, headers, data, { withCredentials: true })
+            axios.post(`http://visualup.koreacentral.cloudapp.azure.com/goal`, data, headers, { withCredentials: true })
             .then((res) => {
                 console.log(res);
             })
